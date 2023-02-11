@@ -1,0 +1,24 @@
+{
+    "files.associations": {
+        "ratio": "c",
+        "bsp_btn_ble.h": "c",
+        "ble_hids.h": "c",
+        "ble.h": "c",
+        "array": "c",
+        "string": "c",
+        "string_view": "c",
+        "vector": "c",
+        "bsp.h": "c",
+        "boards.h": "c",
+        "custom_board.h": "c",
+        "nrfx_saadc.h": "c",
+        "nrf_ble_gatt.h": "c",
+        "peer_manager_handler.h": "c",
+        "nrf_log.h": "c",
+        "nrf_log_default_backends.h": "c",
+        "nordic_common.h": "c",
+        "app_scheduler.h": "c",
+        "nrf.h": "c",
+        "nrf_assert.h": "c"
+    }
+}

@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cortex Debug",
+            "cwd": "${workspaceFolder}",
+            "executable": "pca10040e/s112/armgcc/_build/nrf52810_xxaa.out",
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "servertype": "jlink",
+            "device": "nrf52",
+            "interface": "swd",
+            // "preLaunchTask": "flash application",
+            "serverpath": "/Applications/SEGGER/JLink_V784b/JLinkGDBServerCLExe",
+            "armToolchainPath": "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/",
+            "svdFile": "../../../modules/nrfx/mdk/nrf52.svd",
+            "runToMain": true,
+            "rttConfig": {
+                "enabled": true,
+                "address": "auto",
+                "decoders": [
+                    {
+                        "label": "",
+                        "port": 0,
+                        "type": "console"
+                    }
+                ]
+            }
+        }
+    ]
+}

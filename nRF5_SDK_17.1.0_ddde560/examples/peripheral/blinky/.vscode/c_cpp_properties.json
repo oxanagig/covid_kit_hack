@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/Users/xianggao/Downloads/DeviceDownload/nRF5_SDK_17.1.0_ddde560/components/**",
+                "/Users/xianggao/Downloads/DeviceDownload/nRF5_SDK_17.1.0_ddde560/components/libraries/**",
+                "/Users/xianggao/Downloads/DeviceDownload/nRF5_SDK_17.1.0_ddde560/modules/**"
+            ],
+            "defines": [
+                "LEDS_NUMBER=1",
+                "BUTTONS_NUMBER=1",
+                "BOARD_CUSTOM"
+            ],
+            "macFrameworkPath": [
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "macos-clang-arm"
+        }
+    ],
+    "version": 4
+}

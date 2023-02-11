@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "ratio": "c",
+        "bsp_btn_ble.h": "c",
+        "ble_hids.h": "c",
+        "ble.h": "c",
+        "array": "c",
+        "string": "c",
+        "string_view": "c",
+        "vector": "c",
+        "bsp.h": "c",
+        "boards.h": "c",
+        "custom_board.h": "c"
+    }
+}

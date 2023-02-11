@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "boards.h": "c",
+        "nordic_common.h": "c",
+        "app_error.h": "c",
+        "ble.h": "c",
+        "pca10040.h": "c",
+        "ble_advdata.h": "c",
+        "ble_srv_common.h": "c",
+        "nrf.h": "c",
+        "nrf_ble_gatt.h": "c",
+        "app_timer.h": "c",
+        "nrf_gpio.h": "c",
+        "custom_board.h": "c"
+    }
+}
