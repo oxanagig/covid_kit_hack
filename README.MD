@@ -10,7 +10,7 @@ I decide to take a step further. I have reversed-engineered the schematic of the
 
 ## Demo Video
 
-[![Watch the video](https://img.youtube.com/vi/UvArprBmdFA/default.jpg)](https://youtu.be/UvArprBmdFA)
+[![Watch the video](https://img.youtube.com/vi/n731NR8O8hs/default.jpg)](https://youtu.be/n731NR8O8hs)
 
 ## PCB and SoC Wiring(sorry about my handwriting :grimacing: ):
 ![wiring](/images/covid%20test%20kit%20pinout.png)
@@ -27,6 +27,9 @@ If you are an iPhone user, you probably know that when you have the Camera app o
 The only button on this device serves as both the power button and the shutter button after pairing with a phone. The push button won't latch, but once the button is pressed the battery power will be delivered to the SoC, then I have to set the pin P0.00 high, which serves as a soft latch. At the same time, pin P0.25 is set up as input with the internal pull-up, so it can detect the state of the button. 
 
 Since there is no other button, I have programmed a countdown timer to turn off the device. If there is user interaction for 3 minutes, it will pull the pin P0.25 low to turn off the transistor that connects the Vdd and Vbattery.
+
+
+When the remote is not connected to iPhone, long press button will delete all the exisitng bondings. 
 
 ### :battery: Battery
 The whole application runs on a small CR2032 coin cell battery. It is important to know when to change the battery, the BLE has battery info advertised to the iPhone, and at the same time, the red indicator LED will also be lit if the battery level is less than 20%. The way it detects the battery level is using the SAR ADC to sample the VDD every 2 seconds, and based on the discharge curve of CR2032 it will estimate the battery capacity based on the voltage, and again this is a quick hack, it is by no means very accurate. 
